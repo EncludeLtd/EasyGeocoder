@@ -1,0 +1,21 @@
+{
+    "packageDirectories": [
+        {
+            "path": "force-app",
+            "default": true,
+            "package": "EasyGeocoder",
+            "versionName": "Version 1.0",
+            "versionNumber": "1.0.0.NEXT"
+        }
+    ],
+    "namespace": "ez_geo",
+    "sfdcLoginUrl": "https://login.salesforce.com",
+    "sourceApiVersion": "49.0",
+    "packageAliases": {
+        "EasyGeocoder": "0Ho09000000TN1oCAG",
+        "EasyGeocoder@1.0.0-1": "04t09000000AFXWAA4",
+        "EasyGeocoder@1.0.0-2": "04t09000000AFXbAAO",
+        "EasyGeocoder@1.0.0-3": "04t09000000AFXgAAO",
+        "EasyGeocoder@1.0.0-4": "04t09000000AFXlAAO"
+    }
+}
