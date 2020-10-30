@@ -12,10 +12,7 @@
     "sfdcLoginUrl": "https://login.salesforce.com",
     "sourceApiVersion": "49.0",
     "packageAliases": {
-        "EasyGeocoder": "0Ho09000000TN1oCAG",
-        "EasyGeocoder@1.0.0-1": "04t09000000AFXWAA4",
-        "EasyGeocoder@1.0.0-2": "04t09000000AFXbAAO",
-        "EasyGeocoder@1.0.0-3": "04t09000000AFXgAAO",
-        "EasyGeocoder@1.0.0-4": "04t09000000AFXlAAO"
+        "EasyGeocoder": "0Ho3X000000008eSAA",
+        "EasyGeocoder@1.0.0-1": "04t3X000003P0dDQAS"
     }
 }
