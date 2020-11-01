@@ -12,17 +12,17 @@ https://login.salesforce.com/packaging/installPackage.apexp?p0=04t3X000003P0dDQA
 ![custom-settings-ss.png](https://github.com/EncludeLtd/EasyGeocoder/blob/main/docs/images/custom-settings-ss.png?raw=true)
 ## Supported Fields
 - BillingAddress (Account)
-   - BillingLatitude
-   - BillingLongitude
+ - BillingLatitude
+ - BillingLongitude
 - MailingAddress (Account)
-   - MailingLatitude
-   - MailingLongitude
+ - MailingLatitude
+ - MailingLongitude
 - MailingAddress (Contact)
-   - MailingLatitude
-   - MailingLongitude
+ - MailingLatitude
+ - MailingLongitude
 - OtherAddress (Contact)
-   - OtherLatitude
-   - OtherLongitude
+ - OtherLatitude
+ - OtherLongitude
 - Address (Lead)
-   - Latitude
-   - Longitude
+ - Latitude
+ - Longitude
