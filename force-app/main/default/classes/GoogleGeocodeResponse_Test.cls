@@ -101,4 +101,7 @@ public class GoogleGeocodeResponse_Test {
 		GoogleGeocodeResponse obj = GoogleGeocodeResponse.parse(json);
 		System.assert(obj != null);
 	}
+	static testMethod void actionsTest() {
+		System.assert(true, 'This will is just a useless assertion for testing Github Actions');
+	}
 }
