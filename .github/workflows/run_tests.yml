@@ -1,3 +1,5 @@
+# Based on this implementation: https://github.com/trailheadapps/automation-components/actions/runs/106422605/workflow
+
 # Unique name for this workflow
 name: Run Tests in Scratch Org
 
