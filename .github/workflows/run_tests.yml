@@ -5,7 +5,7 @@ name: Run Tests in Scratch Org
 on:
   push:
       branches:
-        - master
+        - main
       paths:
         - 'force-app/**'
 
