@@ -5,7 +5,7 @@ EasyGeocoder is a package that allows for the retrieving of latitude and longitu
 ## Installation
 Package install link:
 ```bash
-https://login.salesforce.com/packaging/installPackage.apexp?p0=04t3X000003P0dDQAS
+https://login.salesforce.com/packaging/installPackage.apexp?p0=04t3X000003b5JtQAI
 ```
 ## Configuration
 ### Custom Settings

@@ -3,8 +3,16 @@
     Purpose: Test GeocoderBatchable.cls
 */
 
-@isTest public with sharing class GeocoderBatchable_Test {
-    @isTest static void testCalloutSuccess() {
+@isTest 
+public with sharing class GeocoderBatchable_Test {
+
+    @TestSetup
+    static void makeData(){
+        insert new Geocoder_Settings__c(Name = 'default', API_Key__c='testKey', Activate_Account_Geocoding__c=true, Activate_Contact_Geocoding__c=true, Activate_Lead_Geocoding__c=true);
+    }
+
+    @isTest 
+    static void testCalloutSuccess() {
         // Set mock callout class 
         Test.setMock(HttpCalloutMock.class, new HttpSuccessMock());
         Account account = new Account(Name='Test Account', BillingStreet='123 Test St.', ShippingStreet='123 Test St.');
@@ -31,7 +39,8 @@
         System.assertNotEquals(null, updatedLead.Latitude);
         System.assertNotEquals(null, updatedLead.Longitude);
     }
-    @isTest static void testCalloutFailure() {
+    @isTest 
+    static void testCalloutFailure() {
         // Set mock callout class 
         Test.setMock(HttpCalloutMock.class, new HttpErrorMock());
         
@@ -45,7 +54,8 @@
         
     }
 
-    @isTest static void testCalloutFailureBlankAddress() {
+    @isTest 
+    static void testCalloutFailureBlankAddress() {
         // Set mock callout class 
         Test.setMock(HttpCalloutMock.class, new HttpErrorMock());
         

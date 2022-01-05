@@ -15,9 +15,17 @@ public class CustomSettingsTest {
         Test.stopTest();
 
         System.assertEquals('testKey', APIKey);
-        System.assert(activateAccountGeocoding);
-        System.assert(activateContactGeocoding);
-        System.assert(activateLeadGeocoding);
+        System.assert(!activateAccountGeocoding);
+        System.assert(!activateContactGeocoding);
+        System.assert(!activateLeadGeocoding);
+    }
+
+    @isTest
+    static void test() {
+        insert new List<Account>{
+            new Account(Name = 'Test', AnnualRevenue = 555.55),
+            new Account(Name = 'Test', AnnualRevenue = 555.55)
+        };
     }
 
 }

@@ -11,22 +11,14 @@ global with sharing class CustomSettings {
     
     global static Geocoder_Settings__c getGeocoderSettings()
     {
-        if(Test.isRunningTest() && geocoderSettings!=null) return geocoderSettings;
+        if (geocoderSettings!=null) { return geocoderSettings; }
         
         Geocoder_Settings__c setting = Geocoder_Settings__c.getOrgDefaults();
         Geocoder_Settings__c emptySetting = new Geocoder_Settings__c();
-        if(setting==null || setting == emptySetting || Test.isRunningTest()) 
+        if(setting==null || setting == emptySetting) 
         {
-            setting = new Geocoder_Settings__c(Name = 'default', API_Key__c='', Activate_Account_Geocoding__c=false, Activate_Contact_Geocoding__c=false, Activate_Lead_Geocoding__c=false);
-            
-            if(!Test.isRunningTest()) {Database.Insert(setting); setting = Geocoder_Settings__c.getOrgDefaults();}
-            else 
-            {
-                setting.API_Key__c = 'testKey';
-                setting.Activate_Account_Geocoding__c = true;
-                setting.Activate_Contact_Geocoding__c = true;
-                setting.Activate_Lead_Geocoding__c = true;
-            }
+            setting = new Geocoder_Settings__c(Name = 'default', API_Key__c='testKey', Activate_Account_Geocoding__c=false, Activate_Contact_Geocoding__c=false, Activate_Lead_Geocoding__c=false);
+            insert setting;
         }
         return setting;
     }
